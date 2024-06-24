@@ -1,0 +1,415 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+h2 {
+  color: #333; /* Text color */
+  border-bottom: 2px solid #333; /* Bottom border with solid line */
+  padding-bottom: 5px; /* Space between text and border */
+  margin-bottom: 20px; /* Space between this element and the next */
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+  .container {
+      width: 90%;
+  }
+
+  .hamburger-menu {
+      display: block;
+  }
+
+  nav {
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background-color: #333;
+      width: 50%;
+      height: 100vh;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      z-index: 1000;
+  }
+
+  nav.open {
+      display: flex;
+  }
+
+  nav ul {
+      flex-direction: column;
+      padding: 20px 0;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+}
+
+/* Section Styles */
+section {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Shipment Form Styles */
+#shipmentForm form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#shipmentForm h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#shipmentForm label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#shipmentForm input,
+#shipmentForm select,
+#shipmentForm textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+#shipmentForm button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#shipmentForm button:hover {
+  background-color: #555;
+}
+
+/* Receipt Section Styles */
+#receipt {
+  margin-top: 20px;
+}
+
+#receipt .container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#receipt h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+#printableReceipt {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
+}
+
+#printableReceipt h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#printableReceipt p {
+  margin-bottom: 5px;
+}
+
+#printableReceipt strong {
+  font-weight: bold;
+}
+
+.line {
+  border-top: 1px solid #ccc;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#printReceiptBtn {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+#printReceiptBtn:hover {
+  background-color: #555;
+}
+
+/* Track Shipment Section Styles */
+#trackShipment form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#trackShipment h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+#trackShipment label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#trackShipment input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+#trackShipment button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#trackShipment button:hover {
+  background-color: #555;
+}
+
+#trackingResult {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#trackingResult h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+#trackingResult p {
+  margin-bottom: 5px;
+}
+
+/* Stored Shipments Section Styles */
+#storedShipments .container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#storedShipments h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.stored-shipment {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.stored-shipment:hover {
+  background-color: #f2f2f2;
+}
+
+.stored-shipment .shipment-details {
+  display: none;
+}
+
+.stored-shipment.open .shipment-details {
+  display: block;
+}
+
+.stored-shipment .toggle-details {
+  text-align: right;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.stored-shipment .toggle-details button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.stored-shipment .toggle-details button:hover {
+  background-color: #555;
+}
+
+/* Edit Shipment Section Styles */
+#editShipment form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#editShipment h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+#editShipment label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#editShipment input,
+#editShipment select,
+#editShipment textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+#editShipment button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#editShipment button:hover {
+  background-color: #555;
+}
+
